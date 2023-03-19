@@ -1,0 +1,110 @@
+{
+    "name": "PlayerControls",
+    "maps": [
+        {
+            "name": "Player",
+            "id": "bc0ae3ac-25f1-47c3-9c0e-7fc6dcfbda36",
+            "actions": [
+                {
+                    "name": "Movement_LeftPaddel",
+                    "type": "PassThrough",
+                    "id": "d6b54e70-9f59-4168-b3ba-57bcccc7f661",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Movement_RightPaddel",
+                    "type": "PassThrough",
+                    "id": "d6e87eb0-ee28-4f08-9e2c-9e0284e89d5c",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "WS",
+                    "id": "948168dd-cc55-47aa-9d26-88fd66e6ed0c",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement_LeftPaddel",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "71a7124c-b044-4e75-a26a-fb8dcc4953da",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player1",
+                    "action": "Movement_LeftPaddel",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "120cec04-3944-4a4b-97e9-23d5a6450bec",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player1",
+                    "action": "Movement_LeftPaddel",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "ArrowKeys",
+                    "id": "d7dcfdac-22ec-4e68-8c2e-dbf94d060d27",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement_RightPaddel",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "d64cc2a0-fb2f-4c1c-b191-b4c2c338b132",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player1",
+                    "action": "Movement_RightPaddel",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "8cb9ce24-3de0-41be-b2a8-d5a34317a5a6",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Player1",
+                    "action": "Movement_RightPaddel",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Player1",
+            "bindingGroup": "Player1",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
